@@ -1,5 +1,4 @@
 import requests
-import urllib
 import webbrowser
 from art import *
 
