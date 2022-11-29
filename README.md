@@ -18,7 +18,7 @@ pip install requests
 
 pip install art
 
-**NASIL CALISTIRABILIRIM
+**NASIL CALISTIRABILIRIM**
 
 win+r --> cmd --> python /path/to/file/IP_CHECKER.py
 
