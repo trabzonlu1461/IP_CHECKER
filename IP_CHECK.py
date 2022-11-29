@@ -22,7 +22,7 @@ while not end:
 
 
 
-chrome_path = 'C:/Program Files/Google/Chrom/Application/chrome.exe %s'
+chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 
 
 if chrome_path == 'C:/Program Files/Google/Chrome/Application/chrome.exe %s' :
