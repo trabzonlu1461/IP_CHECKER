@@ -22,7 +22,7 @@ while not end:
 
 
 
-chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
+chrome_path = 'C:/Program Files/Google/Chrom/Application/chrome.exe %s'
 
 
 if chrome_path == 'C:/Program Files/Google/Chrome/Application/chrome.exe %s' :
@@ -42,17 +42,14 @@ if chrome_path == 'C:/Program Files/Google/Chrome/Application/chrome.exe %s' :
 
      
 else:
+    web_1 = "https://www.ip-tracker.org/lookup.php?ip=" + ip_address
+    web_2 = "https://scamalytics.com/ip/" + ip_address
+    web_3 = "https://www.virustotal.com/gui/ip-address/" + ip_address
+    web_4 = "https://exchange.xforce.ibmcloud.com/ip/" + ip_address
+    web_5 = "https://www.abuseipdb.com/check/" + ip_address
+    
     webbrowser.open(web_1)
     webbrowser.open(web_2)
     webbrowser.open(web_3)
     webbrowser.open(web_4)
     webbrowser.open(web_5)
-
-
-
-
-
-
-
-
-
