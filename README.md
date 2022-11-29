@@ -1,6 +1,6 @@
 # IP_CHECKER
 
-Yazilimin ana amaci bir ip adresini kisa zaman icinde 5 populer websitesi ile arama yapmak.
+Yazilimin ana amaci bir ip adresini kisa zaman icinde 5 populer websitesi ile arama yapma.
 
 **DIKKAT EDILMESI GEREKENLER**
 
@@ -10,10 +10,16 @@ Ip taramalari otomatik olarak google web browser uzerinden ayarlanmistir. Eger m
 
 **INDIRILMESI GEREKENLER**
 
+PC'nizde Python indirilmis olmasi gerekmektedir
+
 Command Promt acip asagidakileri copy paste yapabilirsiniz 
 
 pip install requests
 
 pip install art
+
+**NASIL CALISTIRABILIRIM
+
+win+r --> cmd --> python /path/to/file/IP_CHECKER.py
 
 
