@@ -5,7 +5,6 @@ from art import *
 
 tprint("IP_CHECK", font="random")
 
-	
 end = False
 while not end:
     ip_address = input("IP check: ")
@@ -20,36 +19,30 @@ while not end:
     elif ip_score ==3:
         end=True
 
-
-
 chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s'
 
+web_dic = {
 
-if chrome_path == 'C:/Program Files/Google/Chrome/Application/chrome.exe %s' :
+"web_1" :"https://www.ip-tracker.org/lookup.php?ip=",
+"web_2" :"https://scamalytics.com/ip/",
+"web_3" :"https://www.virustotal.com/gui/ip-address/",
+"web_4" :"https://exchange.xforce.ibmcloud.com/ip/",
+"web_5" :"https://www.abuseipdb.com/check/" 
+    }
 
-    web_1 = "https://www.ip-tracker.org/lookup.php?ip=" + ip_address
-    web_2 = "https://scamalytics.com/ip/" + ip_address
-    web_3 = "https://www.virustotal.com/gui/ip-address/" + ip_address
-    web_4 = "https://exchange.xforce.ibmcloud.com/ip/" + ip_address
-    web_5 = "https://www.abuseipdb.com/check/" + ip_address
+for web in web_dic:
+	web_dic[web]+=ip_address
 
 
-    webbrowser.get(chrome_path).open(web_1)
-    webbrowser.get(chrome_path).open(web_2)
-    webbrowser.get(chrome_path).open(web_3)
-    webbrowser.get(chrome_path).open(web_4)
-    webbrowser.get(chrome_path).open(web_5)
 
-     
-else:
-    web_1 = "https://www.ip-tracker.org/lookup.php?ip=" + ip_address
-    web_2 = "https://scamalytics.com/ip/" + ip_address
-    web_3 = "https://www.virustotal.com/gui/ip-address/" + ip_address
-    web_4 = "https://exchange.xforce.ibmcloud.com/ip/" + ip_address
-    web_5 = "https://www.abuseipdb.com/check/" + ip_address
-    
-    webbrowser.open(web_1)
-    webbrowser.open(web_2)
-    webbrowser.open(web_3)
-    webbrowser.open(web_4)
-    webbrowser.open(web_5)
+def open_url(ip_address,web_dic):
+
+	if chrome_path == 'C:/Program Files/Google/Chrome/Application/chrome.exe %s' :
+		for url in web_dic:
+			webbrowser.get(chrome_path).open(web_dic[url])
+	else:
+		for url in web_dic:
+			webbrowser.open(web_dic[url])
+
+
+open_url(ip_address,web_dic)
