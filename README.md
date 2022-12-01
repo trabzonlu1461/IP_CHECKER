@@ -6,7 +6,7 @@ Yazilimin ana amaci bir ip adresini kisa zaman icinde 5 populer websitesi ile ar
 
 Suanlik windows icin entegre edilmistir. 
 
-Ip taramalari otomatik olarak google web browser uzerinden ayarlanmistir. Eger microsoft-edge uzerinde aciliyorsa .py dosyasindaki 25 satir (chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s') PC'nizdeki chrome.exe nin lokasyonunu configire ederek duzeltebilirsiniz. 
+Ip taramalari otomatik olarak google web browser uzerinden ayarlanmistir. Eger microsoft-edge uzerinde aciliyorsa .py dosyasindaki 22 satir (chrome_path = 'C:/Program Files/Google/Chrome/Application/chrome.exe %s') PC'nizdeki chrome.exe nin lokasyonunu configire ederek duzeltebilirsiniz. 
 
 **INDIRILMESI GEREKENLER**
 
